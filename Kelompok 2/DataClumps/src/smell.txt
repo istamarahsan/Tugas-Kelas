@@ -1,0 +1,3 @@
+//we found that start and end attribute (Date) always being use together
+//so we make a new class for date (DateRange), that includes attributes(start and end), and also includes the get functions (getStart and getEnd).
+//we are assuming the dates(start and end) in movie class is connected to the rental class, so we change them into and object of Rental class and so for the getstart and getEnd it will follow the dates that user have inputed on the Rental class.

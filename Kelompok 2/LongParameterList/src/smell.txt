@@ -1,0 +1,11 @@
+WalletNotif was a class that handled sending notifications in response to changes in the account. 
+In order to send a notification, it took some user details (address and name) and information it will use to create and send a notification message.
+The first step is to group the obviously-related parameters of user's name and email.
+However, this does not rectify the fact that the notification class has too many responsibilities, one of the results being a long list of parameters.
+What we can do, is identify the primary responsibility of the notification handler, which is taking some context of an event happening, and then composing and sending a message in response.
+So we split the single method into three, representing the three types of events 1. balance check 2. deposit 3. withdraw.
+Then deposit and withdraw only require 1 parameter, which is the amount deposited or withdrawn.
+In this case, we also make it so that one notif handler only handles one user. The user is injected in the constructor. 
+To keep things simple, rather than making a notification manager class that can map users to particular handlers, we use a hashmap instead.
+Anyway, the app does not store more than one user at a time.
+We extract the notification handler as an interface and then transfer to a console implementation.
