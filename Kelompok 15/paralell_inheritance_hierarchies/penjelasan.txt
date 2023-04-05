@@ -1,0 +1,7 @@
+Pada penyelesaian smell ini kami menghilangkan AreaInterface, RectacgleAreaCalculator class dan TriangleAreaCalculator class.
+karena pada dasarnya class AreaCalculator itu hanya mengcopy class rectacgle dan triangle dan menambahkan method overide getArea
+Setelah menghapus class AreaCalculator dan interface tersebut kami memindahkan abstract method yang tadinya ada di AreaInterface ke dalam class Shape2D saja.
+Terakhir kami tinggal mengextend class shape2D ke class rectacgle dan triangle, 
+dan didalam kedua extender class tersebut baru method getArea itu di overide.
+
+jadi intinya kita menghilangkan penggunaan interface yang pada dasarnya dapat ditulis saja di class shape2D.

@@ -1,0 +1,2 @@
+untuk menghilangkan comment smell, kami menghapus comment2 yang kurang efektif dan menggantikannya dengan penulisan code yang lebih deskriptif.
+Kami menggantikan angka2 yang tidak menjelaskan apa2 dengan sebuah enum untuk variasi shape yang ada. 

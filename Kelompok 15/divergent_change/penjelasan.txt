@@ -1,0 +1,2 @@
+Untuk menyelesaikan smell divergent_change ini kami mengextract method print dari class Rectangle ke dalam beberapa class anak berdasarkan behaviournya.
+Dengan dilakukannya pengextractkan ini, ketika terjadi suatu perubahan untuk suatu behaviour tertentu kita hanya perlu mengubah method pada class anak saja.

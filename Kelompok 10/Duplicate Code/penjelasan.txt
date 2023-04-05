@@ -1,0 +1,6 @@
+Maka dalam menyelesaikan smell pada "duplicate smell" code ini, yang kami lakukan adalah sebagai berikut : 
+    1. Memecah 3 buah method yang dalam nya berisikan operasi input, output dan processing menjadi 
+        1) 3 method processing sendiri (Menghitung Area dari Rectangle, Square, dan Circle)
+        2) input dan output kedalam "menu"
+
+Dengan melakukan hal tersebut, kita sudah menghilangkan duplicate code smell dalam kasus ini yaitu pada scanner
