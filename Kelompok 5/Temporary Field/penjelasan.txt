@@ -1,0 +1,4 @@
+"totalPrice" was a variable that was completely dependent on another (the cart items). Thus whenever the cart needed
+to be updated, that variable needed to be updated as well. In other words, totalPrice was just a function of the items.
+Rather than risking keeping mutable state, we can just compute the total price whenever it is requested and remove
+the field completely.

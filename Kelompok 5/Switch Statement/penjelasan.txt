@@ -1,0 +1,6 @@
+We had to use "switch" on the base class to perform different behavior depending on the subtype. 
+However, in OOP we use polymorphism instead.
+We can add a new method to the "Operasi" interface to retrieve a string representation of the object.
+However, this left the class still we too many responsibilities. It was both doing a mathematical operation and doing IO.
+In this case, we isolated the IO such that "Operasi" is a wrapper to print an operation to standard output. The actual
+math operation is injected and instantiated via factory. By adding a "name" field to, this leaves us only needing a single class.

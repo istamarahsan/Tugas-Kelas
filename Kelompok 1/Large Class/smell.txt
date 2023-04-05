@@ -1,0 +1,3 @@
+//so for this large class smell, we only make a class for credit which contain some methods like set and get.
+//finally we just change the set method on the Customer class into using the credit's class set method.
+//we also move the display method from Customer class into the main class.

@@ -1,0 +1,6 @@
+The character class is holding too many primitives i.e. weaponName, weaponType, armorName, and armorType. We can group them, like weaponName, weaponType into a class (Weapon) and armorName. armorType into a class (Armor).
+By doing that we lower the use of primitives datatype. in this case are string datatype.
+This increases the cohesion between the bits of data that were highly related (armor-related data, weapon-related data).
+Additionally, we chose to represent the weapon and armor types as enums that are parsed on input, since it seems that these were actually limited options rather than actual strings.
+
+Simply after we make them a new class we just construct a bit of the code, change some parameter into the class that we have made.
