@@ -1,0 +1,6 @@
+pada kasus ini terdapat code smell yaitu Data Class.
+smell ini terjadi karena suatu class hanya berisikan data dan method setter getter saja.
+
+Pada code before dapat dilihat bahwa class CurrCoordinates hanya berisikan data coordinates yaitu x dan y dan juga beberapa method get untuk mengambil x dan y tersebut. Dengan tidak adanya method lain selain get data maka dapat dikatakan bahwa class CurrCoordinates ini memiliki smell yaitu data class.
+
+Untuk menyelesaikan smell data class ini kami memindahkan logic perhitungan (distance) yang sebelumnya terdapat pada class Main ke dalam class CurrCoordinates. Dengan begini class CurrCoordinates tidak hanya berperan sebagai get data saja namun memiliki behaviour lain yaitu menghitung distance.
