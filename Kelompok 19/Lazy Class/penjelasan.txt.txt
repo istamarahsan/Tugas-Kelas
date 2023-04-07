@@ -1,0 +1,6 @@
+Dalam kasus ini kita telah menyelesaikan lazy class smell.
+Smell yang terjadi akibat minimnya fungsi yang dimiliki oleh suatu class, sehingga class tersebut kurang efektif.
+
+Dalam code before ini dapat dilihat bahwa class worker hanya berfungsi untuk menyimpan nama, salary serta mengembalikan kedua hal tsbt melalui method get. Melihat hanya itu saja hal yang dilakukan oleh class worker maka bisa dibilang class tersebut memiliki fungsi yang sangat minim dan hal tsbt menyebabkan smell lazy class.
+
+Untuk menyelesaikan smell ini kami menghapus class worker dan untuk menggantikan tugasnya yang dimana untuk menyimpan serta mengambil nama dan salary, kami membuat suatu hashmap. Dengan hashmap ini kami dapat mengambil key (nama) dan juga value (salary) dan dengan begitu kami dapat tetap melakukan tugas class worker dan berhasil mengeliminasi smell lazy class.

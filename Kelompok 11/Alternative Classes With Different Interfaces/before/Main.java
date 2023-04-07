@@ -1,21 +1,10 @@
-import java.util.HashMap;
-import java.util.Map;
+
 
 public class Main {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		CheckoutHandler handler = new CheckoutHandler();
-        
-        Map<TargetCurrency, Double> exchangeRates1 = new HashMap<>() {{
-                this.put(TargetCurrency.EUR, 0.9);
-                this.put(TargetCurrency.IDR, (double) 1);
-        }};
-
-        Map<TargetCurrency, Double> exchangeRates2 = new HashMap<>() {{
-                this.put(TargetCurrency.EUR, 0.9);
-                this.put(TargetCurrency.IDR, (double) 15000);
-        }};
 
         handler.addItemToCart(new Item("Shirt", 25.0));
         handler.addItemToCart(new Item("Pants", 40.0));
@@ -24,14 +13,16 @@ public class Main {
         printReceipt(handler);
 
         // Hitung harga dalam USD
-        System.out.println("Total price in USD: $" + String.format("%.2f", handler.totalPriceUSD()));
+        double totalPriceUSD = handler.calculateTotalPrice();
+        System.out.println("Total price in USD: $" + String.format("%.2f", totalPriceUSD));
 
         // Ubah total harga ke EUR
-        double totalPriceEUR = handler.totalPriceUSD() * exchangeRates1.get(TargetCurrency.EUR);
+        CurrencyConverter converter = new CurrencyConverter("EUR");
+        double totalPriceEUR = converter.convert(totalPriceUSD);
         System.out.println("Total price in EUR: " + String.format("%.2f", totalPriceEUR));
 
         // Ubah total harga ke IDR
-        double totalPriceIDR = handler.totalPriceUSD() * exchangeRates2.get(TargetCurrency.IDR);
+        double totalPriceIDR = handler.convertToCurrency(totalPriceUSD, "IDR");
         System.out.println("Total price in IDR: Rp " + String.format("%.0f", totalPriceIDR));
 	}
 	
