@@ -1,0 +1,3 @@
+Pada soal calculator, terdapat smell code yaitu speculative generality yang dimana terletak pada "String operator".
+Hal ini dikarenakan karena kita semua pasti sudah mengenal operator - operator yang ada, maka dari itu untuk apa kita menambahkan kemungkinan baru yang memang tidak akan terpakai.
+Solusi kami adalah, membuat method - method yang langsung mewakili fungsinya masing - masing operator - operator yang ada (+, -, /, *, %).
