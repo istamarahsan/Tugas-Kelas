@@ -1,0 +1,6 @@
+penyelesaian ini berdasarkan hal berikut : 
+Weapon and warrior are data classes. Warrior holds a reference to a weapon.
+We're not sure what the middle man case here is, however the Weapon class contains a method to print.
+This violates the single responsibility principle.
+Thus we just convert that method into a getter.
+The printing of the weapon type is done in the main method.
