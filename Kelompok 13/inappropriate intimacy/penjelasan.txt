@@ -1,0 +1,8 @@
+pada code kali ini terdapat smell yaitu inappropiate intimacy. 
+inappropiate intimacy adalah suatu smell yang terjadi akibat adanya hubungan yang terlalu erat antar classes, sehingga class yang satu dapat mengexploitasi internal field milik class yang lainnya.
+
+Dalam kasus ini class BankAccount memiliki hubungan yang erat dengan class Customer, sampai2 class BankAccount dapat mengambil value dari field nama milik class Customer.
+Terlalu eratnya hubungan antara kedua class ini tidak selalu menjadi hal yang baik, karena class BankAccount dapat sewaktu2 mengakses bahkan mengubah value dari field nama milik class Customer itu tanpa melalui class Customer.
+
+Solusi untuk mengatasi smell ini adalah kami membuat field nama tersebut menjadi private pada class Customer, sehingga field tersebut tidak bisa sembarangan diakses oleh class lain.
+Untuk tetap dapat mengambil value dari field name tsb kami membuat method get untuk field tsb pada class Customer. 

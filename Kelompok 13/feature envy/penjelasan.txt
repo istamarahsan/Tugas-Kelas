@@ -1,0 +1,8 @@
+pada code kali ini terdapat smell yaitu feature envy.
+feature envy adalah sebuah smell yang terjadi akibat suatu class menggunakan data dari class lain lebih banyak dibandingkan data class sendiri.
+
+Pada kasus ini pada class User terdapat suatu method GetFullAddress yang menggunakan data dari class ContactInfo lebih banyak dibandingkan menggunakan data dari class User sendiri.
+
+oleh karena itu untuk mengatasi smell ini kami memindahkan method tersebut ke class ContactInfo saja, sehingga tidak perlu mengakses data dari class external.
+
+jadi pada akhirnya class User hanya perlu memanggil method GetFullAddress dari class ContactInfo saja tanpa perlu mengakses data miliki ContactInfo.

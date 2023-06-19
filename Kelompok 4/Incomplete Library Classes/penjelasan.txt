@@ -1,0 +1,6 @@
+This is the Incomplete Library Smell. This code comes from a library that
+provides an EmailService class. However, it isn't actually implemented.
+Furthermore, it is just a single class.
+
+We do not implement actual email, but we extract the interface (for the consumer of the library)
+and provide a stub implementation. The instantiation is hidden behind a factory. Also, we removed the Main entrypoint method because this is a library.

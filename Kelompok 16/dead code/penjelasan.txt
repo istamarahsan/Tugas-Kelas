@@ -1,0 +1,2 @@
+Pada smell code di soal "Discount Calculator:, terdapat code yang tidak efisien, karena pada class DiscountCalculator terdapat fungsi if yang sebenarnya tidak diperlukan.
+Dikatakan tidak diperlukan karena pada akhirnya, meskipun fungsi if tersebut dijalankan, output dari code adalah hasil akhir dari gungsi finalPrice setelahnya.
