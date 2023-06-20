@@ -1,0 +1,1 @@
+Unnecessary Abstraction, Smell ini terjadi ketika ada clas yang dibuat padahal tidak dibutuhkan. Dalam kasus ini class BlueButton dan RedButton dibuat hanya untuk ngeset color, padahal seharusnya setcolor itu bisa dilakukan langsung pada class Buttontest, oleh karena itu kita bisa buang saja class BlueButton dan RedButton.

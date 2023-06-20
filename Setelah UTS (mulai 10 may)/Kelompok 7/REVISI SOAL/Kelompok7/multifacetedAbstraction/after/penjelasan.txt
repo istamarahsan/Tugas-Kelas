@@ -1,0 +1,1 @@
+untuk penjelasan sama dengan soal yang sebelum revisi, pada kasus ini class employee memiliki tanggung jawab lebih dari 1, oleh karena itu kita pisahkan kita buat class untuk ngitung salary sendiri, sehingga tanggung jawab pada class employee dapat berkurang.

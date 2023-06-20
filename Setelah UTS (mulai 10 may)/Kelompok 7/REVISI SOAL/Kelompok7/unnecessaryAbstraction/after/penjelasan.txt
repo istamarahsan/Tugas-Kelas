@@ -1,0 +1,1 @@
+untuk penjelasan mirip dengan soal sebelum revisi, pada kasus ini class shape sebenarnya tidak dibutuhkan karena hanya mempunyai 1 abstract method saja. oleh karena itu class shape ini dapat dibuang saja dan method dideclare langsung pada class circle dan square

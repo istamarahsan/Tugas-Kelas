@@ -1,0 +1,1 @@
+Missing Encapsulation dapat terjadi bila suatu variabel tidak terenkapsulasi dalam abstraksi/hierarki. pada kasus ini dapat dilihat pada class employee semua variable memiliki akses public hal ini dapat bebahaya karena variable ini rentan terpengaruhi dari luar. oleh karena itu kami mengubah akses dari public ke private, guna menjaga konsistensi variable pada class Employee.

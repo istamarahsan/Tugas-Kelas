@@ -1,0 +1,1 @@
+Unutilized Abstraction, Smell ini terjadi ketika ada class atau interface yang tidak pernah digunakan di dalam project. Dalam kasus ini abstract class status tidak digunakan sama sekali dalam main, oleh karena itu bisa dibuang saja classnya.

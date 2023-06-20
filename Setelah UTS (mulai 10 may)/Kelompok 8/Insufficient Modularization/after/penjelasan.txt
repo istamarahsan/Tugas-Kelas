@@ -1,0 +1,3 @@
+Insufficient Modularization, Smell ini terjadi karena adanya abstraksi yang terlalu besar dan harus dipecahkan (dekomposisi) ke beberapa abstraksi baru. Smell ini mirip dengan Large Class dan juga Long Method.
+
+Dalam kasus ini kami hanya memisahkan public static void main(String[] args) dari public class ShoppingCart. Menururt kami class ShoppingCart sudah aman(bkn sebuah large class dan tidak ada long method) sehingga tidak perlu di pecah2. karena jika semisal mau dipisah2 nanti malah menimbulkan smell lain yang dimana sebuah class hanya berisikan 1 method (sifat) gitu.
